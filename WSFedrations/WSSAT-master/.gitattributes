@@ -1,0 +1,28 @@
+static/* linguist-vendored
+# Auto detect text files and perform LF normalization
+* text=auto
+
+#*.js     linguist-language=csharp
+
+WSSAT/Accordion/* linguist-vendored
+WSSAT/bin/Debug/Accordion/* linguist-vendored
+WSSAT/PieChart/* linguist-vendored
+WSSAT/bin/Debug/PieChart/* linguist-vendored
+packages/* linguist-vendored
+packages/jQuery.1.10.2/Content/Scripts/* linguist-vendored
+
+# Custom for Visual Studio
+*.cs     diff=csharp
+*.asmx   diff=csharp
+
+# Standard to msysgit
+*.doc  diff=astextplain
+*.DOC  diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF  diff=astextplain
+*.rtf  diff=astextplain
+*.RTF  diff=astextplain

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFCoreSecurityXamarinDemo.DetailViewPages.ContactsDetailViewPage">
+  <StackLayout Orientation="Vertical">
+    <Label Text="Contact"
+           Style="{StaticResource detailViewPageTitleLabel}" />
+    
+    <StackLayout Style="{StaticResource normalSpacing}" />
+
+    <Label Text="Id"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Id}"
+           TextColor="{Binding IdTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Name"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Name}"
+           TextColor="{Binding NameTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Address"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Address}"
+           TextColor="{Binding AddressTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Department"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Department}"
+           TextColor="{Binding DepartmentTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+  </StackLayout>
+</ContentPage>

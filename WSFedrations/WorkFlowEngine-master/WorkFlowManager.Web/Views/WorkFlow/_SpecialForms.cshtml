@@ -1,0 +1,29 @@
+﻿@model IEnumerable<WorkFlowManager.Common.ViewModels.FormViewViewModel>
+
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <div class="col-lg-12">
+                    <h3 class="box-title">Form Information</h3>
+                </div>
+            </div>
+            <div class="box-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr><td>Name</td><td>View Name</td></tr>
+                    </thead>
+                    @foreach (var item in Model)
+                    {
+                        <text>
+                            <tr><td>@item.FormName</td><td>@item.ViewName</td></tr>
+                        </text>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

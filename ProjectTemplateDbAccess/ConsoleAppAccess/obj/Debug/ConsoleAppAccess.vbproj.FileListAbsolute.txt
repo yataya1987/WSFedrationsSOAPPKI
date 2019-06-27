@@ -1,0 +1,13 @@
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\bin\Debug\ConsoleAppAccess.exe.config
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\bin\Debug\ConsoleAppAccess.exe
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\bin\Debug\ConsoleAppAccess.pdb
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\bin\Debug\ConsoleAppAccess.xml
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.vbprojAssemblyReference.cache
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\Interop.Scripting.dll
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.vbproj.ResolveComReference.cache
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.Resources.resources
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.vbproj.GenerateResource.cache
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.vbproj.CoreCompileInputs.cache
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.exe
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.xml
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ConsoleAppAccess\obj\Debug\ConsoleAppAccess.pdb

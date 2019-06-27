@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Foundatio\Foundatio.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Metrics.NET" Version="0.5.5" />
+  </ItemGroup>
+</Project>

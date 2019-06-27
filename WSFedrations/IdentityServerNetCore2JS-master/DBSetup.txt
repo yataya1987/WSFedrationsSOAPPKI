@@ -1,0 +1,20 @@
+In order to properly setup this environment it is recommended to run the 
+
+IdentityServerAdminAspUsers and create the database by typing
+
+update-database in the Package Manager console.
+
+It is Mandatory to have a valid Sql Server connection string to provide in the appsetting.json
+
+for example
+
+ "DefaultConnection": "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AspNetSecurity;Data Source=localhost"
+
+ Then after creating an user it is possible to launch the Identity Server and use the implicit flow in the JavascriptClient project
+
+ Alternatively it is also possible require an access token to the identity server by following the flow of the OauthClientReact project
+
+ To configure identity server with Entity Framework follow the example below
+
+ https://github.com/IdentityServer/IdentityServer4.EntityFramework
+

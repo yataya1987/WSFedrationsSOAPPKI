@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFCoreSecurityXamarinDemo.DetailViewPages.TasksDetailViewPage">
+  <StackLayout Orientation="Vertical">
+    <Label Text="Task"
+           Style="{StaticResource detailViewPageTitleLabel}" />
+    
+    <StackLayout Style="{StaticResource normalSpacing}" />
+    
+    <Label Text="Id"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Id}"
+           TextColor="{Binding IdTextColor}"
+           FontSize="Medium" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Description"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Description}"
+           TextColor="{Binding DescriptionTextColor}"
+           FontSize="Medium" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Note"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Note}"
+           TextColor="{Binding NoteTextColor}"
+           FontSize="Medium" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="StartDate"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding StartDate}"
+           TextColor="{Binding StartDateTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Complete date"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding DateCompleted}"
+           TextColor="{Binding DateCompletedTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Percent completed"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding PercentCompleted}"
+           TextColor="{Binding PercentCompletedTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+  </StackLayout>
+</ContentPage>

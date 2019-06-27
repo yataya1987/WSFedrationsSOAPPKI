@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WorkFlowManager.Common.ViewModels.DecisionMethodViewModel>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <div class="col-lg-12">
+                    <h3 class="box-title">Method Information</h3>
+                </div>
+            </div>
+            <div class="box-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr><td>Name</td><td>Function</td></tr>
+                    </thead>
+                    @foreach (var item in Model)
+                    {
+                        <text>
+                            <tr><td>@item.MethodName</td><td>@item.MethodFunction</td></tr>
+                        </text>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

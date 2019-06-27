@@ -1,0 +1,35 @@
+How to create a Self signed certificate in windows 10 and export it to a file
+
+First launch powershell as administrator and issue the following command
+
+New-SelfSignedCertificate -certstorelocation cert:\localmachine\my -dnsname *.dmm888.com
+
+(dmm888.com is the domain name)
+
+The output will be:
+
+Thumbprint                                Subject
+----------                                -------
+BBCEFBE3BDDBADD1**FEF13C****8BB1B9  CN=*.dmm888.com
+
+Second
+create the following variable:
+$CertPwd = ConvertTo-SecureString -String “YourPassword” -Force –AsPlainText
+
+and finally issue the export command using the Thumbprint:
+
+Export-PfxCertificate -cert cert:\localMachine\my\BBCEFBE3BDDBADD1**FEF13C****8BB1B9 -FilePath c:\certs\dmm.pfx -Password $CertPwd
+
+The certificate must then placed in the project and copied in the output directory if newer
+
+To be able to verify the JWT signature we need to get the public key of it.
+we can proceed in the following way:
+
+Get-PfxCertificate -FilePath c:\certs\dmm.pfx | Export-Certificate -FilePath dm.cer -Type Cert
+
+and finally we need to convert to base64 string with the following command
+
+certutil -encode dm.cer dmbase64.cer
+
+The content of the file dmbase64.cer will contain the public key that can be pasted in the verification text at jwt.io
+in order to verify the signature of the token.

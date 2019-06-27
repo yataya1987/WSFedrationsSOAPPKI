@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFCoreSecurityXamarinDemo.DetailViewPages.DepartmentsDetailViewPage">
+  <StackLayout Orientation="Vertical">
+    <Label Text="Department"
+           Style="{StaticResource detailViewPageTitleLabel}" />
+    
+    <StackLayout Style="{StaticResource normalSpacing}" />
+    
+    <Label Text="Id"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Id}"
+           TextColor="{Binding IdTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Title"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Title}"
+           TextColor="{Binding TitleTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+    
+    <StackLayout Style="{StaticResource smallSpacing}" />
+    
+    <Label Text="Office"
+           Style="{StaticResource detailViewCaptionLabel}" />
+    <Label Text="{Binding Office}"
+           TextColor="{Binding OfficeTextColor}"
+           Style="{StaticResource detailViewValueLabel}" />
+  </StackLayout>
+</ContentPage>

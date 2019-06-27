@@ -1,0 +1,5 @@
+<div data-options="dxView : { name: 'Departments', title: 'Departments List', disableCache: true } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div id="gridContainer" data-bind="dxDataGrid: dataGridOptions"></div>
+    </div>
+</div>

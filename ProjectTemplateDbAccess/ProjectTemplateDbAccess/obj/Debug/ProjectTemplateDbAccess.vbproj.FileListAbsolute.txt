@@ -1,0 +1,5 @@
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ProjectTemplateDbAccess\bin\Debug\ProjectTemplates\VisualBasic\1033\ProjectTemplateDbAccess.zip
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ProjectTemplateDbAccess\build\ProjectTemplates\VisualBasic\1033\ProjectTemplateDbAccess.zip
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ProjectTemplateDbAccess\obj\Debug\_EmptyResource.resources
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ProjectTemplateDbAccess\obj\Debug\ProjectTemplateDbAccess.vbproj.GenerateResource.cache
+C:\Users\Yousef.Ataya\Source\Repos\ProjectTemplateDbAccess\ProjectTemplateDbAccess\obj\Debug\ProjectTemplateDbAccess.vbproj.CoreCompileInputs.cache

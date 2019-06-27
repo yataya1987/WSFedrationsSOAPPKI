@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFCoreSecurityXamarinDemo.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <Style x:Key="listViewPageStyle" TargetType="ContentPage">
+        <Setter Property="Padding">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="Thickness"
+                iOS="10, 20, 10, 0"
+                Android="10, 0"
+                WinPhone="10, 0" />
+          </Setter.Value>
+        </Setter>
+      </Style>
+      
+      <Style x:Key="listViewStyle" TargetType="ListView">
+        <Setter Property="RowHeight">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Int32"
+                  iOS="80"
+                  Android="80"
+                  WinPhone="90" />
+          </Setter.Value>
+        </Setter>
+        <Setter Property="SeparatorVisibility" Value="None" />
+      </Style>
+      
+      <!--      
+      <Style x:Key="listViewGridStyle" TargetType="Grid">
+        <Setter Property="RowDefinitions">
+          <Setter.Value>
+            <x:Array Type="x:Type x:RowDefinition">
+              <RowDefinition Height="1*" />
+              <RowDefinition Height="2*" />
+            </x:Array>
+          </Setter.Value>
+        </Setter>
+
+        <Setter Property="ColumnDefinitions">
+          <Setter.Value>
+            <x:Array Type="x:Type x:ColumnDefinition">
+              <ColumnDefinition Width="3*" />
+              <ColumnDefinition Width="2*" />
+            </x:Array>
+          </Setter.Value>
+        </Setter>
+      </Style>      
+      -->
+
+      <Style x:Key="detailViewPageTitleLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="Large" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+      </Style>
+
+      <Style x:Key="detailViewCaptionLabel" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Medium" />
+      </Style>
+
+      <Style x:Key="detailViewValueLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="Medium" />
+      </Style>
+
+      <Style x:Key="smallSpacing" TargetType="StackLayout">
+        <Setter Property="Padding" Value="0, 0, 0, 15" />
+      </Style>
+
+      <Style x:Key="normalSpacing" TargetType="StackLayout">
+        <Setter Property="Padding" Value="0, 0, 0, 20" />
+      </Style>
+
+
+
+
+      <DataTemplate x:Key="contactItemTemplate">
+        <ViewCell>
+          <ContentView Padding="5">
+            <Frame OutlineColor="Accent"
+                   Padding="10">
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="1*" />
+                  <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="3*" />
+                  <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Name"
+                       Grid.Row="0" Grid.Column="0"
+                       FontSize="Small" />
+                <Label Text="{Binding Name}"
+                       TextColor="{Binding NameTextColor}"
+                       Grid.Row="1" Grid.Column="0"
+                       FontSize="Large" />
+                <Label Text="Address"
+                       Grid.Row="0" Grid.Column="1"
+                       FontSize="Small" />
+                <Label Text="{Binding Address}"
+                       TextColor="{Binding AddressTextColor}"
+                       Grid.Row="1" Grid.Column="1"
+                       FontSize="Large" />
+              </Grid>
+            </Frame>
+          </ContentView>
+        </ViewCell>
+      </DataTemplate>
+
+      <DataTemplate x:Key="taskItemTemplate">
+        <ViewCell>
+          <ContentView Padding="5">
+            <Frame OutlineColor="Accent"
+                   Padding="10">
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="1*" />
+                  <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="3*" />
+                  <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Description"
+                       Grid.Row="0" Grid.Column="0"
+                       FontSize="Small" />
+                <Label Text="{Binding Description}"
+                       TextColor="{Binding DescriptionTextColor}"
+                       Grid.Row="1" Grid.Column="0"
+                       FontSize="Large" />
+                <Label Text="Percent completed"
+                       Grid.Row="0" Grid.Column="1"
+                       FontSize="Small" />
+                <Label Text="{Binding PercentCompleted}"
+                       TextColor="{Binding PercentCompletedTextColor}"
+                       Grid.Row="1" Grid.Column="1"
+                       FontSize="Large" />
+              </Grid>
+            </Frame>
+          </ContentView>
+        </ViewCell>
+      </DataTemplate>
+
+      <DataTemplate x:Key="departmentItemTemplate">
+        <ViewCell>
+          <ContentView Padding="5">
+            <Frame OutlineColor="Accent"
+                   Padding="10">
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="1*" />
+                  <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="3*" />
+                  <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Title"
+                       Grid.Row="0" Grid.Column="0"
+                       FontSize="Small" />
+                <Label Text="{Binding Title}"
+                       TextColor="{Binding TitleTextColor}"
+                       Grid.Row="1" Grid.Column="0"
+                       FontSize="Large" />
+                <Label Text="Office"
+                       Grid.Row="0" Grid.Column="1"
+                       FontSize="Small" />
+                <Label Text="{Binding Office}"
+                       TextColor="{Binding OfficeTextColor}"
+                       Grid.Row="1" Grid.Column="1"
+                       FontSize="Large" />
+              </Grid>
+            </Frame>
+          </ContentView>
+        </ViewCell>
+      </DataTemplate>
+      
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
